@@ -24,7 +24,7 @@
 
 		<gwtVersion>2.7.0</gwtVersion>
 		<googleGin>2.1.2</googleGin>
-		<outputFolder>${project.build.directory}/${artifactId}</outputFolder>
+		<outputFolder>${project.build.directory}/${project.artifactId}</outputFolder>
 	</properties>
 
 	<dependencies>
