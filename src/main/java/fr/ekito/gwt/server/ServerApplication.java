@@ -25,6 +25,7 @@ public class ServerApplication {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+    logger.info("ServerApplication starting up");
 		SpringApplication.run(ServerApplication.class, args);
 	}
 	
