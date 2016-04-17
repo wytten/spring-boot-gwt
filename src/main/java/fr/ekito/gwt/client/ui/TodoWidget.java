@@ -58,7 +58,7 @@ public class TodoWidget extends Composite {
 	@UiHandler("deleteButton")
 	void onAddButtonClick(ClickEvent e) {
 		// show confirm popup
-		boolean confirm = Window.confirm("Supprimer "+currentTodo.getTitle()+" ?");
+		boolean confirm = Window.confirm("Delete "+currentTodo.getTitle()+" ?");
 		if (confirm){
 			// ask controller for delete
 			_eventBus.fireEvent(new DeleteTodoEvent(currentTodo));
