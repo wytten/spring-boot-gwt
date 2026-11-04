@@ -109,7 +109,7 @@ public class WebAppController {
 	protected void loadTodoList() {
 		String pageBaseUrl = GWT.getHostPageBaseURL();
 		// String baseUrl = GWT.getModuleBaseURL();
-		RequestBuilder rb = new RequestBuilder(RequestBuilder.GET, pageBaseUrl + "/rest/todos/");
+		RequestBuilder rb = new RequestBuilder(RequestBuilder.GET, pageBaseUrl + "rest/todos");
 		rb.setCallback(new RequestCallback() {
 
 			public void onError(Request request, Throwable e) {
