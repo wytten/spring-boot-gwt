@@ -1,2 +1,2 @@
-echo http://localhost:8080/GwtWebApp.html
+#!/bin/zsh
 java -jar target/*.war
