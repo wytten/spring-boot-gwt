@@ -10,7 +10,6 @@ import com.google.gwt.http.client.RequestCallback;
 import com.google.gwt.http.client.RequestException;
 import com.google.gwt.http.client.Response;
 import com.google.gwt.user.client.Window;
-import com.google.inject.Inject;
 
 import fr.ekito.gwt.client.event.AddTodoEvent;
 import fr.ekito.gwt.client.event.AddTodoEventHandler;
@@ -47,7 +46,6 @@ public class WebAppController {
 	 */
 	private MainPanel _mainPanel;
 
-	@Inject
 	public WebAppController(SimpleEventBus eventBus, ModelHandler modelHandler, MainPanel mainPanel) {
 
 		_eventBus = eventBus;

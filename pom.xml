@@ -25,26 +25,8 @@
 
 		<gwtVersion>2.13.1</gwtVersion>
 		<gwtMavenPluginVersion>2.10.0</gwtMavenPluginVersion>
-		<googleGin>2.1.2</googleGin>
-		<!-- Gin ships with Guice 3, whose cglib proxies fail on modern JDKs -->
-		<guiceVersion>6.0.0</guiceVersion>
 		<outputFolder>${project.build.directory}/${project.artifactId}</outputFolder>
 	</properties>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>com.google.inject</groupId>
-				<artifactId>guice</artifactId>
-				<version>${guiceVersion}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.inject.extensions</groupId>
-				<artifactId>guice-assistedinject</artifactId>
-				<version>${guiceVersion}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 	<dependencies>
 		<dependency>
@@ -64,18 +46,6 @@
 			<version>${gwtVersion}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.google.gwt.inject</groupId>
-			<artifactId>gin</artifactId>
-			<version>${googleGin}</version>
-			<scope>provided</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>com.google.gwt</groupId>
-					<artifactId>*</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 	</dependencies>
 
 
@@ -88,7 +58,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<!-- GWT client-side jars are not needed at runtime -->
-					<excludeGroupIds>org.gwtproject,com.google.gwt.inject,com.google.inject,com.google.inject.extensions</excludeGroupIds>
+					<excludeGroupIds>org.gwtproject</excludeGroupIds>
 				</configuration>
 			</plugin>
 			<plugin>

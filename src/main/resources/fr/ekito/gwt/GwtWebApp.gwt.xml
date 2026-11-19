@@ -12,8 +12,6 @@
 
 	<inherits name="com.google.gwt.resources.Resources" />
 
-	<!-- Gin -->
-	<inherits name="com.google.gwt.inject.Inject" />
 
 	<!-- French language, independent of country -->
 	<!-- <extend-property name="locale" values="fr" /> -->

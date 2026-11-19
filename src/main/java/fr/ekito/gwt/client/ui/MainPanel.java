@@ -16,7 +16,6 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
-import com.google.inject.Inject;
 
 import fr.ekito.gwt.client.event.AddTodoEvent;
 import fr.ekito.gwt.client.event.DeleteAllTodoEvent;
@@ -73,7 +72,6 @@ public class MainPanel extends Composite {
 	 */
 	private ModelHandler _modelHandler;
 
-	@Inject
 	public MainPanel(SimpleEventBus eventBus, ModelHandler modelHandler) {
 		_eventBus = eventBus;
 		// init display

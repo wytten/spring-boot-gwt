@@ -7,7 +7,6 @@ A quickstart spring boot gwt application
 
 - Spring Boot 4.1.2 (embedded Tomcat 11)
 - GWT 2.13.1 (org.gwtproject), gwt-maven-plugin 2.10.0
-- Google Gin 2.1.2 (with Guice 6.0.0)
 - Java 17 or later (tested with JDK 25), Maven 3
 
 ## Running the application
@@ -40,7 +39,7 @@ Quick dive in the code :
 - fr.ekito.gwt.client for GWT client side code
 - fr.ekito.gwt.client.controller contains Client Http Rest controller
 
-The application is build uppon Google Gin 
+The client wires its components by hand in the `GwtWebApp` entry point (no DI framework).
 
 ## More details
 
