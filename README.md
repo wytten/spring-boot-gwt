@@ -5,7 +5,7 @@ A quickstart spring boot gwt application
 
 ## Versions
 
-- Spring Boot 4.1.2 (embedded Tomcat 11)
+- Spring Boot 4.2.0 (embedded Tomcat 11)
 - GWT 2.13.1 (org.gwtproject), gwt-maven-plugin 2.10.0
 - Java 17 or later (tested with JDK 25), Maven 3
 
